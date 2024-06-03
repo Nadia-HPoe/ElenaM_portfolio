@@ -1,0 +1,67 @@
+@use "../../assets/styles/var";
+
+.aboutme__container,
+.education__container {
+  padding: 0 14rem;
+}
+.aboutme__title,
+.education__title {
+  padding-top: 5rem;
+  font-weight: 700;
+  font-size: 44px;
+  line-height: 60px;
+}
+
+.aboutme__title-line {
+  margin: 0;
+  width: 5%;
+  border: 2px solid var.$main-color;
+  text-align: right;
+}
+.aboutme__list li::marker {
+  color: var.$main-color;
+  font-size: 35px;
+}
+
+.aboutme__list-item,
+.aboutme__paragraph-item {
+  font-size: 21px;
+  line-height: 32px;
+  letter-spacing: 0.03em;
+}
+
+.aboutme__paragraph-item {
+  font-weight: 600;
+}
+
+.education__wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 10rem;
+}
+
+.education__list-title {
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: uppercase;
+}
+
+.education__list-wrapper {
+  column-count: 1;
+}
+.education__list-item {
+  display: grid;
+  grid-template-columns: 25% 70%;
+  align-items: center;
+  justify-items: flex-start;
+}
+
+.education__list-item_year,
+.education__list-item_name {
+  font-size: 22px;
+  line-height: 29px;
+  letter-spacing: 0.045em;
+}
+.education__list-item_name {
+  color: var.$main-color;
+}
