@@ -3,6 +3,8 @@ import { Header } from "./components/Header";
 import "../src/assets/styles/global.scss";
 import { AboutMe } from "./components/AboutMe";
 import { Education } from "./components/Education";
+import { Portfolio } from "./components/Portfolio";
+import { Footer } from "./components/Footer";
 
 function App() {
   return (
@@ -11,6 +13,8 @@ function App() {
       <Main />
       <AboutMe />
       <Education />
+      <Portfolio />
+      <Footer />
     </div>
   );
 }

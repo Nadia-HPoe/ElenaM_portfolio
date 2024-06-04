@@ -36,7 +36,7 @@ const Education = () => {
       <div className='education__wrapper'>
         <div className='education__list'>
           <p className='education__list-title'>
-            <Icons name='circle' color='#aa474c' size='20' />
+            <Icons className='icon' name='circle' color='#aa474c' size='20' />
             Образование
           </p>
           <div className='education__list-wrapper'>
@@ -52,7 +52,7 @@ const Education = () => {
         </div>
         <div className='education__list'>
           <p className='education__list-title'>
-            <Icons name='circle' color='#aa474c' size='20' />
+            <Icons className='icon' name='circle' color='#aa474c' size='20' />
             Курсы
           </p>
           <div className='education__list-item'>

@@ -1,6 +1,13 @@
 @use "../assets/styles/var";
 
 .container {
+  background: rgb(226, 151, 155);
+  background: linear-gradient(
+    180deg,
+    rgba(226, 151, 155, 1) 0%,
+    rgba(208, 187, 188, 1) 17%,
+    rgba(255, 255, 255, 1) 100%
+  );
   padding: 7rem 14rem;
 }
 .main__wrapper {
