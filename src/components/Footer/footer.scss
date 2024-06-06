@@ -5,7 +5,7 @@
   background: rgb(170, 71, 76);
   background: linear-gradient(
     0deg,
-    rgba(170, 71, 76, 1) 0%,
+    rgb(173, 114, 117) 0%,
     rgba(208, 187, 188, 1) 49%,
     rgba(255, 255, 255, 1) 100%
   );
@@ -15,12 +15,35 @@
   align-items: center;
 }
 
+.footer__contacts {
+  display: flex;
+}
+
+.footer__contacts-link {
+  display: flex;
+  padding-right: 2rem;
+  text-decoration: none;
+  color: black;
+  font-size: 28px;
+  line-height: 33px;
+  font-weight: 500;
+  transition: 0.3s all;
+  &:hover,
+  &:active {
+    color: var.$main-color;
+  }
+}
+
+.footer__contacts-icon {
+  padding-right: 0.3rem;
+}
 .footer__menu {
   display: flex;
 }
 
 .footer__list {
   display: flex;
+  padding: 1rem 0 2rem;
 }
 
 .footer__list-item {
@@ -28,19 +51,33 @@
 }
 
 .footer__link {
-  padding-right: 1rem;
+  padding-right: 2rem;
   text-decoration: none;
   color: black;
-  font-size: 17px;
-  line-height: 28px;
+  font-size: 24px;
+  line-height: 26px;
+  font-weight: 500;
   transition: 0.3s all;
   &:hover,
   &:active {
     color: var.$main-color;
   }
 }
+.footer__copyright {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .footer__copyright-paragraph {
   font-size: 17px;
   line-height: 28px;
-  font-weight: 600;
+}
+.footer__copyright-link {
+  text-decoration: none;
+  color: black;
+  transition: none;
+  &:hover,
+  &:active {
+    border-bottom: 1px solid black;
+  }
 }

@@ -1,12 +1,28 @@
 @use "../../assets/styles/var";
 
 .header__menu {
-  padding: 2rem 6rem;
+  padding: 2rem 0;
   display: flex;
-  justify-content: end;
+  justify-content: space-around;
 }
+.header__contacts {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1rem;
+}
+.header__contacts-link {
+  text-decoration: none;
+}
+.header__contacts-icon {
+  fill: var.$main-color;
+  &:hover {
+    fill: #be7175;
+  }
+}
+
 .header__list {
-  width: 60%;
+  width: 50%;
   display: flex;
   justify-content: space-around;
 }

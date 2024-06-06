@@ -29,7 +29,7 @@ const Portfolio = () => {
             </p>
             <button className='portfolio__item-button'>Читать статью</button>
           </div>
-          <div className='portfolio__item-right'>
+          {/* <div className='portfolio__item-right'>
             <div className='portfolio__item'>
               <p className='portfolio__item-title'>
                 <Icons
@@ -50,8 +50,8 @@ const Portfolio = () => {
               </p>
               <button className='portfolio__item-button'>Читать статью</button>
             </div>
-          </div>
-          {/* <div className='portfolio__item-left'>
+          </div> */}
+          <div className='portfolio__item-left'>
             <p className='portfolio__item-title'>
               <Icons
                 className='portfolio__icon icon'
@@ -71,7 +71,7 @@ const Portfolio = () => {
               «Маркетинговая стратегия b2b»
             </p>
             <button className='portfolio__item-button'>Читать статью</button>
-          </div> */}
+          </div>
         </div>
         <div className='portfolio__switcher'>
           <Icons name='arrow' color='#aa474c' size='50' />

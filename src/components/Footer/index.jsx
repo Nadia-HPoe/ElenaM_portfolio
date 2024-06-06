@@ -6,13 +6,45 @@ const Footer = () => {
   return (
     <div className='footer__container'>
       <div className='footer__contacts'>
-        <a href='https://t.me/lenore_mommy'>
-          <Icons name='telegram' color='#aa474c' size='30' />
-          @lenore_mommy
+        <a
+          className='footer__contacts-link link'
+          href='https://vk.com/paranoid_lenore'
+          target='_blank'
+          rel='noreferrer'
+        >
+          <Icons
+            className='footer__contacts-icon'
+            name='vk'
+            color='#aa474c'
+            size='30'
+          />
+          vkontakte
         </a>
-        <a href='mailto: support@Flowers.com'>
-          <Icons name='mail' color='#aa474c' size='30' />
-          support@Flowers.com
+        <a
+          className='footer__contacts-link'
+          href='https://t.me/lenore_mommy'
+          target='_blank'
+          rel='noreferrer'
+        >
+          <Icons
+            className='footer__contacts-icon'
+            name='telegram'
+            color='#aa474c'
+            size='30'
+          />
+          telegram
+        </a>
+        <a
+          className='footer__contacts-link'
+          href='mailto: mazurovaes@yandex.ru'
+        >
+          <Icons
+            className='footer__contacts-icon'
+            name='mail'
+            color='#aa474c'
+            size='30'
+          />
+          mazurovaes@yandex.ru
         </a>
       </div>
       <div class='footer__menu'>
@@ -42,7 +74,21 @@ const Footer = () => {
       <div class='footer__copyright'>
         <p class='footer__copyright-paragraph'>
           Copyright © 2024. Designed and developed by{" "}
-          <a href='https://github.com/Nadia-HPoe'>Nadezhda Borisova</a>
+          <a
+            class='footer__copyright-link'
+            href='https://github.com/Nadia-HPoe'
+          >
+            Nadia Borisova
+          </a>
+        </p>
+        <p class='footer__copyright-paragraph'>
+          <a
+            class='footer__copyright-link'
+            href='https://www.flaticon.com/free-icons/agenda'
+            title='agenda icons'
+          >
+            Agenda icons created by Freepik - Flaticon
+          </a>
         </p>
       </div>
     </div>

@@ -1,5 +1,14 @@
 @use "../../assets/styles/var";
 
+.icon::before {
+  display: inline-block;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+}
+.icon-solid::before {
+  font: var(--fa-font-solid);
+}
+
 .aboutme__container,
 .education__container,
 .portfolio__container {
@@ -20,15 +29,19 @@
   border: 2px solid var.$main-color;
   text-align: right;
 }
-.aboutme__list li::marker {
-  color: var.$main-color;
-  font-size: 35px;
+.aboutme__list {
+  list-style-position: inside;
+  list-style: none;
+  padding-left: 0;
 }
 
+.aboutme__list-item {
+  padding-bottom: 0.5rem;
+}
 .aboutme__list-item,
 .aboutme__paragraph-item,
 .portfolio__item-link {
-  font-size: 17px;
+  font-size: 18px;
   line-height: 26px;
   letter-spacing: 0.03em;
 }
