@@ -1,83 +1,123 @@
 import React from "react";
-import { Icons } from "../Icons";
+import { portfolio } from "./portfolio";
+import { PortfolioItem } from "./PortfolioItem";
 import "../AboutMe/aboutme.scss";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Pagination } from "swiper/modules";
+import { Navigation } from "swiper/modules";
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/grid";
+import "swiper/css/pagination";
 
 const Portfolio = () => {
+  // const portfolioList = portfolio.map((item) => (
+  //   <PortfolioItem
+  //     key={item.id}
+  //     title={item.title}
+  //     name={item.name}
+  //     text={item.text}
+  //     link={item.link}
+  //   />
+  // ));
+
+  // {portfolio.slice(0).map((item) => (
+  //   <PortfolioItem
+  //     key={item.id}
+  //     title={item.title}
+  //     name={item.name}
+  //     text={item.text}
+  //     link={item.link}
+  //   />
+  // ))}
   return (
     <div className='portfolio__container'>
       <h2 className='portfolio__title'>Портфолио</h2>
       <hr className='aboutme__title-line' />
       <div className='portfolio__wrapper'>
-        <div className='portfolio__item'>
-          <div className='portfolio__item-left'>
-            <p className='portfolio__item-title'>
-              <Icons
-                className='portfolio__icon icon'
-                name='circle'
-                color='#aa474c'
-                size='20'
+        <Swiper
+          style={{
+            "--swiper-navigation-color": "#aa474c",
+            "--swiper-pagination-color": "#aa474c",
+          }}
+          navigation={true}
+          loop={true}
+          modules={[Navigation, Pagination]}
+          slidesPerView={2}
+          spaceBetween={90}
+          pagination={{
+            clickable: true,
+          }}
+          className='mySwiper'
+        >
+          <SwiperSlide>
+            {portfolio.slice(0, 2).map((item) => (
+              <PortfolioItem
+                key={item.id}
+                title={item.title}
+                name={item.name}
+                text={item.text}
+                link={item.link}
               />
-              SEO-статья
-            </p>
-            <p className='portfolio__item-link'>
-              Надо ли согласовывать остекление балкона после 1 марта 2022 года?
-            </p>
-            <p className='portfolio__item-paragraph'>
-              Текст уже 2 года находится в топ-3 поисковой выдачи, имеет 76
-              тысяч просмотров и привлекает органический трафик на сайт
-              отраслевого портала «ОКНА МЕДИА»
-            </p>
-            <button className='portfolio__item-button'>Читать статью</button>
-          </div>
-          {/* <div className='portfolio__item-right'>
-            <div className='portfolio__item'>
-              <p className='portfolio__item-title'>
-                <Icons
-                  className='portfolio__icon icon'
-                  name='circle'
-                  color='#aa474c'
-                  size='20'
-                />
-                Экспертная SEO-статья
-              </p>
-              <p className='portfolio__item-link'>
-                Единый налоговый платеж с 2023 года: разбираем спорные вопросы
-              </p>
-              <p className='portfolio__item-paragraph'>
-                Статья в блог для международной аудиторской компании в сложной
-                B2B-нише. Приводит на сайт узкую целевую аудиторию, которую
-                можно конвертировать в лиды с помощью формы заявки на сайте.
-              </p>
-              <button className='portfolio__item-button'>Читать статью</button>
-            </div>
-          </div> */}
-          <div className='portfolio__item-left'>
-            <p className='portfolio__item-title'>
-              <Icons
-                className='portfolio__icon icon'
-                name='circle'
-                color='#aa474c'
-                size='20'
+            ))}
+          </SwiperSlide>
+          <SwiperSlide>
+            {portfolio.slice(2, 4).map((item) => (
+              <PortfolioItem
+                key={item.id}
+                title={item.title}
+                name={item.name}
+                text={item.text}
+                link={item.link}
               />
-              SEO-статья в нише «Маркетинг»
-            </p>
-            <p className='portfolio__item-link'>
-              Маркетинговая стратегия для b2b-компании: готовое решение, которое
-              помогает поднять продажи
-            </p>
-            <p className='portfolio__item-paragraph'>
-              ТВ тексте рассказала о стратегии маркетингового агентства в сфере
-              b2b. Статья попала в топ поисковой выдачи по запросу
-              «Маркетинговая стратегия b2b»
-            </p>
-            <button className='portfolio__item-button'>Читать статью</button>
-          </div>
-        </div>
-        <div className='portfolio__switcher'>
-          <Icons name='arrow' color='#aa474c' size='50' />
-        </div>
+            ))}
+          </SwiperSlide>
+          <SwiperSlide>
+            {portfolio.slice(4, 6).map((item) => (
+              <PortfolioItem
+                key={item.id}
+                title={item.title}
+                name={item.name}
+                text={item.text}
+                link={item.link}
+              />
+            ))}
+          </SwiperSlide>
+          <SwiperSlide>
+            {portfolio.slice(6, 8).map((item) => (
+              <PortfolioItem
+                key={item.id}
+                title={item.title}
+                name={item.name}
+                text={item.text}
+                link={item.link}
+              />
+            ))}
+          </SwiperSlide>
+          <SwiperSlide>
+            {portfolio.slice(8, 9).map((item) => (
+              <PortfolioItem
+                key={item.id}
+                title={item.title}
+                name={item.name}
+                text={item.text}
+                link={item.link}
+              />
+            ))}
+          </SwiperSlide>
+        </Swiper>
       </div>
     </div>
+    // {/* // <div className='portfolio__container'>
+    //   <h2 className='portfolio__title'>Портфолио</h2>
+    //   <hr className='aboutme__title-line' />
+    //   <div className='portfolio__wrapper'>
+    //     {portfolioList}
+    //     <div className='portfolio__switcher'>
+    //       <Icons name='arrow' color='#aa474c' size='50' />
+    //     </div>
+    //   </div>
+    // </div> */}
   );
 };
 
