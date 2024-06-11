@@ -3,9 +3,9 @@ import { forwardRef } from "react";
 import Image from "../../assets/images/main_image.jpg";
 import "./main.scss";
 
-const Main = forwardRef((footer, props, ref) => {
+const Main = forwardRef(({ footer, props }, ref) => {
   return (
-    <section className='container'>
+    <section ref={ref} className='container'>
       <div className='main__wrapper'>
         <div className='main__info'>
           <h2 className='main__info-title'>

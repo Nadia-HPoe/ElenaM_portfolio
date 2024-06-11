@@ -4,7 +4,7 @@ import "./footer.scss";
 import { Icons } from "../Icons";
 
 const Footer = forwardRef(
-  ({ main, about, education, portfolio, props, ref }) => {
+  ({ main, about, education, portfolio, props }, ref) => {
     return (
       <footer ref={ref} className='footer__container'>
         <div className='footer__contacts'>

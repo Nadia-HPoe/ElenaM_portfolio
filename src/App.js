@@ -6,6 +6,7 @@ import { Portfolio } from "./components/Portfolio";
 import { Footer } from "./components/Footer";
 import { useRef } from "react";
 import "../src/assets/styles/global.scss";
+import { ScrollToTopButton } from "./components/scrollToTopButton";
 
 function App() {
   const mainRef = useRef(null);
@@ -16,6 +17,7 @@ function App() {
 
   return (
     <div className='App'>
+      <ScrollToTopButton />
       <Header
         main={mainRef}
         about={aboutRef}

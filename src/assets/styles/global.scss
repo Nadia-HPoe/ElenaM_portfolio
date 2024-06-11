@@ -10,3 +10,19 @@ body {
   line-height: normal;
   background-color: #ffffff;
 }
+
+.main__button-scroll {
+  position: fixed;
+  right: 20px;
+  bottom: 10px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+.main__button-scroll_icon {
+  transition: 0.5s all;
+  &:hover,
+  &:active {
+    fill: #280e0f;
+  }
+}
