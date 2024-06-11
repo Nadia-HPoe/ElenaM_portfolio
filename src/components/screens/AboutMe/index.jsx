@@ -1,7 +1,7 @@
 import React from "react";
 import { forwardRef } from "react";
-import { Icons } from "../Icons";
-import "./aboutme.scss";
+import { Icons } from "../../Icons";
+import "../screens.scss";
 
 const AboutMe = forwardRef((props, ref) => {
   return (

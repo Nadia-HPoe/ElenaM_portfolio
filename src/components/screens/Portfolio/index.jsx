@@ -2,7 +2,7 @@ import React from "react";
 import { forwardRef } from "react";
 import { portfolio } from "./portfolio";
 import { PortfolioItem } from "./PortfolioItem";
-import "../AboutMe/aboutme.scss";
+import "../screens.scss";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination } from "swiper/modules";
 import { Navigation } from "swiper/modules";

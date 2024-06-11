@@ -1,8 +1,8 @@
-import { Main } from "./components/Main";
+import { Main } from "./components/screens/Main";
 import { Header } from "./components/Header";
-import { AboutMe } from "./components/AboutMe";
-import { Education } from "./components/Education";
-import { Portfolio } from "./components/Portfolio";
+import { AboutMe } from "./components/screens/AboutMe";
+import { Education } from "./components/screens/Education";
+import { Portfolio } from "./components/screens/Portfolio";
 import { Footer } from "./components/Footer";
 import { useRef } from "react";
 import "../src/assets/styles/global.scss";

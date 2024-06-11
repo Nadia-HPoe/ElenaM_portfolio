@@ -1,7 +1,7 @@
 import React from "react";
 import { forwardRef } from "react";
-import Image from "../../assets/images/main_image.jpg";
-import "./main.scss";
+import Image from "../../../assets/images/main_image.jpg";
+import "../screens.scss";
 
 const Main = forwardRef(({ footer, props }, ref) => {
   return (

@@ -1,6 +1,6 @@
 import React from "react";
-import { Icons } from "../Icons";
-import "../AboutMe/aboutme.scss";
+import { Icons } from "../../Icons";
+import "../screens.scss";
 
 const PortfolioItem = (props) => {
   return (
