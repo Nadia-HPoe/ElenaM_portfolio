@@ -2,9 +2,9 @@ import React from "react";
 import "./header.scss";
 import { Icons } from "../Icons";
 
-const Header = () => {
+const Header = ({ main, about, education, portfolio }) => {
   return (
-    <div className='header__container'>
+    <header className='header__container'>
       <nav class='header__menu'>
         <div className='header__contacts'>
           <a
@@ -46,28 +46,48 @@ const Header = () => {
         </div>
         <ul class='header__list'>
           <li class='header__list-item'>
-            <a href='/' class='header__link'>
+            <button
+              onClick={() =>
+                main.current.scrollIntoView({ behavior: "smooth" })
+              }
+              class='header__link'
+            >
               Обо мне
-            </a>
+            </button>
           </li>
           <li class='header__list-item'>
-            <a href='/' class='header__link'>
+            <button
+              onClick={() =>
+                about.current.scrollIntoView({ behavior: "smooth" })
+              }
+              class='header__link'
+            >
               Что я умею
-            </a>
+            </button>
           </li>
           <li class='header__list-item'>
-            <a href='/' class='header__link'>
+            <button
+              onClick={() =>
+                education.current.scrollIntoView({ behavior: "smooth" })
+              }
+              class='header__link'
+            >
               Образование
-            </a>
+            </button>
           </li>
           <li class='header__list-item'>
-            <a href='/' class='header__link'>
+            <button
+              onClick={() =>
+                portfolio.current.scrollIntoView({ behavior: "smooth" })
+              }
+              class='header__link'
+            >
               Портфолио
-            </a>
+            </button>
           </li>
         </ul>
       </nav>
-    </div>
+    </header>
   );
 };
 

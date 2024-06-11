@@ -1,10 +1,11 @@
 import React from "react";
+import { forwardRef } from "react";
 import Image from "../assets/images/main_image.jpg";
 import "./main.scss";
 
-const Main = () => {
+const Main = forwardRef((props, ref, footer) => {
   return (
-    <div className='container'>
+    <section ref={ref} className='container'>
       <div className='main__wrapper'>
         <div className='main__info'>
           <h2 className='main__info-title'>
@@ -28,14 +29,21 @@ const Main = () => {
             </p>
           </div>
 
-          <button className='main__info-button'>Связаться со мной</button>
+          <button
+            onClick={() =>
+              footer.current.scrollIntoView({ behavior: "smooth" })
+            }
+            className='main__info-button'
+          >
+            Связаться со мной
+          </button>
         </div>
         <div className='main__image'>
           <img src={Image} className='main__image-item' alt='myphoto' />
         </div>
       </div>
-    </div>
+    </section>
   );
-};
+});
 
 export { Main };

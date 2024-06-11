@@ -1,4 +1,5 @@
 import React from "react";
+import { forwardRef } from "react";
 import { portfolio } from "./portfolio";
 import { PortfolioItem } from "./PortfolioItem";
 import "../AboutMe/aboutme.scss";
@@ -10,28 +11,9 @@ import "swiper/css/navigation";
 import "swiper/css/grid";
 import "swiper/css/pagination";
 
-const Portfolio = () => {
-  // const portfolioList = portfolio.map((item) => (
-  //   <PortfolioItem
-  //     key={item.id}
-  //     title={item.title}
-  //     name={item.name}
-  //     text={item.text}
-  //     link={item.link}
-  //   />
-  // ));
-
-  // {portfolio.slice(0).map((item) => (
-  //   <PortfolioItem
-  //     key={item.id}
-  //     title={item.title}
-  //     name={item.name}
-  //     text={item.text}
-  //     link={item.link}
-  //   />
-  // ))}
+const Portfolio = forwardRef((props, ref) => {
   return (
-    <div className='portfolio__container'>
+    <section ref={ref} className='portfolio__container'>
       <h2 className='portfolio__title'>Портфолио</h2>
       <hr className='aboutme__title-line' />
       <div className='portfolio__wrapper'>
@@ -95,7 +77,7 @@ const Portfolio = () => {
             ))}
           </SwiperSlide>
           <SwiperSlide>
-            {portfolio.slice(8, 9).map((item) => (
+            {portfolio.slice(8, 10).map((item) => (
               <PortfolioItem
                 key={item.id}
                 title={item.title}
@@ -107,18 +89,8 @@ const Portfolio = () => {
           </SwiperSlide>
         </Swiper>
       </div>
-    </div>
-    // {/* // <div className='portfolio__container'>
-    //   <h2 className='portfolio__title'>Портфолио</h2>
-    //   <hr className='aboutme__title-line' />
-    //   <div className='portfolio__wrapper'>
-    //     {portfolioList}
-    //     <div className='portfolio__switcher'>
-    //       <Icons name='arrow' color='#aa474c' size='50' />
-    //     </div>
-    //   </div>
-    // </div> */}
+    </section>
   );
-};
+});
 
 export { Portfolio };

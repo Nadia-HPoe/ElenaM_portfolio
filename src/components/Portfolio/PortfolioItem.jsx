@@ -14,8 +14,10 @@ const PortfolioItem = (props) => {
         />
         {props.title}
       </p>
-      <p className='portfolio__item-link'>{props.name}</p>
-      <p className='portfolio__item-paragraph'>{props.text}</p>
+      <div className='portfolio__item-text'>
+        <p className='portfolio__item-link'>{props.name}</p>
+        <p className='portfolio__item-paragraph'>{props.text}</p>
+      </div>
       <a
         href={props.link}
         target='_blank'

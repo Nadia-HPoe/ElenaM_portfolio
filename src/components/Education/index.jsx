@@ -1,4 +1,5 @@
 import React from "react";
+import { forwardRef } from "react";
 import { Icons } from "../Icons";
 import "../AboutMe/aboutme.scss";
 
@@ -30,9 +31,9 @@ const courses = [
   },
 ];
 
-const Education = () => {
+const Education = forwardRef((props, ref) => {
   return (
-    <div className='education__container'>
+    <section ref={ref} className='education__container'>
       <h2 className='education__title'>Образование:</h2>
       <hr className='aboutme__title-line' />
       <div className='education__wrapper'>
@@ -67,8 +68,8 @@ const Education = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
-};
+});
 
 export { Education };

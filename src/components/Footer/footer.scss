@@ -51,8 +51,12 @@
 }
 
 .footer__link {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
   padding-right: 2rem;
   text-decoration: none;
+  font: inherit;
   color: black;
   font-size: 24px;
   line-height: 26px;

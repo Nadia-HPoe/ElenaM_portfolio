@@ -42,7 +42,9 @@
 }
 .aboutme__list-item,
 .aboutme__paragraph-item,
-.portfolio__item-link {
+.portfolio__item-link,
+.education__list-item_year,
+.education__list-item_name {
   font-size: 18px;
   line-height: 26px;
   letter-spacing: 0.03em;
@@ -76,12 +78,6 @@
   justify-items: flex-start;
 }
 
-.education__list-item_year,
-.education__list-item_name {
-  font-size: 17px;
-  line-height: 26px;
-  letter-spacing: 0.045em;
-}
 .education__list-item_name {
   color: var.$main-color;
 }
@@ -102,20 +98,14 @@
   align-items: start;
   padding: 2rem 0;
   margin: 1rem 5rem;
+  min-height: max-content;
   max-width: 75%;
   width: 100%;
 }
 
-// .portfolio__item-left {
-//   text-align: left;
-//   max-width: 50%;
-//   width: 100%;
-// }
-// .portfolio__item-right {
-//   width: 45%;
-//   display: flex;
-//   align-self: flex-end;
-// }
+.portfolio__item-text {
+  min-height: 209px;
+}
 
 .portfolio__item-paragraph {
   font-weight: 500;

@@ -15,9 +15,10 @@
   text-decoration: none;
 }
 .header__contacts-icon {
+  transition: 0.3s all;
   fill: var.$main-color;
   &:hover {
-    fill: #be7175;
+    fill: black;
   }
 }
 
@@ -31,9 +32,14 @@
 }
 
 .header__link {
+  border: none;
+  background-color: transparent;
   text-decoration: none;
+  font: inherit;
+  cursor: pointer;
   color: black;
   font-size: 28px;
+  font-weight: 400;
   line-height: 33px;
   transition: 0.3s all;
   &:hover,

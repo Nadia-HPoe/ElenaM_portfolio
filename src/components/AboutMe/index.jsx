@@ -1,10 +1,11 @@
 import React from "react";
+import { forwardRef } from "react";
 import { Icons } from "../Icons";
 import "./aboutme.scss";
 
-const AboutMe = () => {
+const AboutMe = forwardRef((props, ref) => {
   return (
-    <div className='aboutme__container'>
+    <section ref={ref} className='aboutme__container'>
       <h2 className='aboutme__title'>
         Какие тексты могу написать или отредактировать:
       </h2>
@@ -103,8 +104,8 @@ const AboutMe = () => {
           контролировать выполнение задач, редактировать готовые тексты.
         </li>
       </ul>
-    </div>
+    </section>
   );
-};
+});
 
 export { AboutMe };
