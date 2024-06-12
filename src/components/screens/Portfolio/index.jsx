@@ -89,6 +89,79 @@ const Portfolio = forwardRef((props, ref) => {
           </SwiperSlide>
         </Swiper>
       </div>
+      <div className='portfolio__wrapper-mobile'>
+        <Swiper
+          style={{
+            "--swiper-navigation-color": "#aa474c",
+            "--swiper-pagination-color": "#aa474c",
+          }}
+          navigation={true}
+          loop={true}
+          modules={[Navigation, Pagination]}
+          slidesPerView={1}
+          spaceBetween={90}
+          pagination={{
+            clickable: true,
+          }}
+          className='mySwiper'
+        >
+          <SwiperSlide>
+            {portfolio.slice(0, 2).map((item) => (
+              <PortfolioItem
+                key={item.id}
+                title={item.title}
+                name={item.name}
+                text={item.text}
+                link={item.link}
+              />
+            ))}
+          </SwiperSlide>
+          <SwiperSlide>
+            {portfolio.slice(2, 4).map((item) => (
+              <PortfolioItem
+                key={item.id}
+                title={item.title}
+                name={item.name}
+                text={item.text}
+                link={item.link}
+              />
+            ))}
+          </SwiperSlide>
+          <SwiperSlide>
+            {portfolio.slice(4, 6).map((item) => (
+              <PortfolioItem
+                key={item.id}
+                title={item.title}
+                name={item.name}
+                text={item.text}
+                link={item.link}
+              />
+            ))}
+          </SwiperSlide>
+          <SwiperSlide>
+            {portfolio.slice(6, 8).map((item) => (
+              <PortfolioItem
+                key={item.id}
+                title={item.title}
+                name={item.name}
+                text={item.text}
+                link={item.link}
+              />
+            ))}
+          </SwiperSlide>
+          <SwiperSlide>
+            {portfolio.slice(8, 10).map((item) => (
+              <PortfolioItem
+                key={item.id}
+                title={item.title}
+                name={item.name}
+                text={item.text}
+                link={item.link}
+              />
+            ))}
+          </SwiperSlide>
+        </Swiper>
+      </div>
     </section>
   );
 });
