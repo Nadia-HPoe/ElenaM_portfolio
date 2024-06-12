@@ -49,6 +49,45 @@ const Footer = forwardRef(
             mazurovaes@yandex.ru
           </a>
         </div>
+        <div className='footer__contacts-mobile'>
+          <a
+            className='footer__contacts-link link'
+            href='https://vk.com/paranoid_lenore'
+            target='_blank'
+            rel='noreferrer'
+          >
+            <Icons
+              className='footer__contacts-icon'
+              name='vk'
+              color='#aa474c'
+              size='40'
+            />
+          </a>
+          <a
+            className='footer__contacts-link'
+            href='https://t.me/lenore_mommy'
+            target='_blank'
+            rel='noreferrer'
+          >
+            <Icons
+              className='footer__contacts-icon'
+              name='telegram'
+              color='#aa474c'
+              size='40'
+            />
+          </a>
+          <a
+            className='footer__contacts-link'
+            href='mailto: mazurovaes@yandex.ru'
+          >
+            <Icons
+              className='footer__contacts-icon'
+              name='mail'
+              color='#aa474c'
+              size='40'
+            />
+          </a>
+        </div>
         <div class='footer__menu'>
           <ul class='footer__list'>
             <li class='footer__list-item'>

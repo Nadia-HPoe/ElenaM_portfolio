@@ -8,10 +8,18 @@ const Main = forwardRef(({ footer, props }, ref) => {
     <section ref={ref} className='container'>
       <div className='main__wrapper'>
         <div className='main__info'>
+          <div className='main__image-adaptive'>
+            <img
+              src={Image}
+              className='main__image-item-adaptive'
+              alt='myphoto'
+            />
+          </div>
           <h2 className='main__info-title'>
             Привет! Я Лена Мазурова, <br />
             автор и редактор коммерческих текстов.
           </h2>
+
           <div className='main__info-aboutme'>
             <p className='main__info-text'>
               А еще я журналист и профессиональный маркетолог — поэтому знаю,

@@ -30,6 +30,9 @@
   font-size: 20px;
   line-height: 26px;
 }
+.main__image-adaptive {
+  display: none;
+}
 .main__image {
   display: flex;
   align-items: center;
@@ -65,6 +68,7 @@
 .portfolio__container {
   padding: 0 10rem;
 }
+
 .aboutme__title,
 .education__title,
 .portfolio__title {
@@ -172,7 +176,6 @@
   background-color: var.$main-color;
   color: white;
   border-color: transparent;
-  border-radius: 10px;
   text-decoration: none;
   text-align: center;
   font-weight: 500;
@@ -197,4 +200,271 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+@media screen and (max-width: 1700px) and (min-width: 1500px) {
+  .main__info-title {
+    font-size: 36px;
+    line-height: 48px;
+  }
+
+  .main__info-text {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .aboutme__title,
+  .education__title,
+  .portfolio__title {
+    padding-top: 5rem;
+    font-size: 36px;
+    line-height: 48px;
+  }
+  .education__list-title,
+  .portfolio__item-title {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .portfolio__item-text {
+    min-height: 150px;
+  }
+}
+@media screen and (max-width: 1499px) and (min-width: 1100px) {
+  .container {
+    padding: 3rem 8rem;
+  }
+  .aboutme__container,
+  .education__container {
+    padding: 0 8rem;
+  }
+  .portfolio__container {
+    padding: 0 4rem;
+  }
+  .main__wrapper {
+    gap: 6rem;
+  }
+
+  .main__info-title {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 40px;
+  }
+
+  .main__info-text {
+    font-size: 16px;
+    line-height: 22px;
+  }
+  .aboutme__title,
+  .education__title,
+  .portfolio__title {
+    padding-top: 3rem;
+    font-size: 32px;
+    line-height: 40px;
+  }
+  .education__list-title,
+  .portfolio__item-title {
+    font-size: 17px;
+    line-height: 22px;
+  }
+
+  .aboutme__list-item,
+  .aboutme__paragraph-item,
+  .portfolio__item-link,
+  .education__list-item_year,
+  .education__list-item_name {
+    font-size: 16px;
+    line-height: 22px;
+  }
+  .portfolio__item {
+    padding: 1rem 0;
+    margin: 1rem 4rem;
+  }
+
+  .portfolio__item-text {
+    min-height: 170px;
+  }
+  .portfolio__item-paragraph {
+    font-size: 14px;
+    line-height: 22px;
+  }
+  .portfolio__item-button {
+    width: 8rem;
+    height: 2.5rem;
+    padding-top: 1rem;
+    font-size: 14px;
+    line-height: 22px;
+  }
+}
+@media screen and (max-width: 1099px) and (min-width: 551px) {
+  .container {
+    padding: 1rem 4rem;
+  }
+  .aboutme__container,
+  .education__container {
+    padding: 0 4rem;
+  }
+  .portfolio__container {
+    padding: 0 3rem;
+  }
+  .main__wrapper {
+    gap: 3rem;
+  }
+
+  .main__info {
+    gap: 0.5rem;
+    width: 90%;
+  }
+
+  .main__info-title {
+    font-size: 24px;
+    line-height: 30px;
+  }
+
+  .main__info-text {
+    font-size: 14px;
+    line-height: 17px;
+  }
+  .main__info-button {
+    width: 15rem;
+    height: 3rem;
+    font-size: 16px;
+    line-height: 20px;
+    border-radius: 10px;
+  }
+
+  .aboutme__title,
+  .education__title,
+  .portfolio__title {
+    padding-top: 3rem;
+    font-size: 24px;
+    line-height: 30px;
+  }
+  .education__list-title,
+  .portfolio__item-title {
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  .aboutme__list-item,
+  .aboutme__paragraph-item,
+  .portfolio__item-link,
+  .education__list-item_year,
+  .education__list-item_name {
+    font-size: 14px;
+    line-height: 17px;
+  }
+  .education__wrapper {
+    grid-gap: 3rem;
+  }
+
+  .portfolio__item {
+    margin: 1rem 3rem;
+    max-width: 85%;
+  }
+
+  .portfolio__item-text {
+    min-height: 209px;
+  }
+
+  .portfolio__item-paragraph {
+    font-size: 14px;
+    line-height: 17px;
+  }
+  .portfolio__item-button {
+    width: 7rem;
+    height: 1.8rem;
+    padding-top: 0.8rem;
+    font-size: 12px;
+    line-height: 15px;
+  }
+}
+@media screen and (max-width: 1099px) and (min-width: 750px) {
+  .main__image-item {
+    max-width: 400px;
+  }
+}
+@media screen and (max-width: 749px) and (min-width: 200px) {
+  .main__image-item {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 550px) and (min-width: 200px) {
+  .container {
+    padding: 1rem 1rem;
+  }
+  .aboutme__container,
+  .education__container {
+    padding: 0 1rem;
+  }
+  .portfolio__container {
+    padding: 0 1rem;
+  }
+  .main__wrapper {
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .main__info {
+    align-items: center;
+    gap: 0.5rem;
+    width: 100%;
+  }
+
+  .main__info-title {
+    text-align: center;
+    font-size: 18px;
+    line-height: 26px;
+  }
+
+  .main__info-text {
+    font-size: 14px;
+    line-height: 18px;
+  }
+  .main__image-adaptive {
+    display: flex;
+  }
+
+  .main__image-item-adaptive {
+    width: 100%;
+    height: auto;
+    max-width: 150px;
+    border-radius: 22rem;
+  }
+
+  .main__info-button {
+    width: 15rem;
+    height: 3rem;
+    font-size: 18px;
+    line-height: 26px;
+    border-radius: 10px;
+  }
+
+  .aboutme__title,
+  .education__title,
+  .portfolio__title {
+    padding-top: 3rem;
+    font-size: 18px;
+    line-height: 26px;
+  }
+
+  .education__list-title,
+  .portfolio__item-title {
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  .aboutme__list-item,
+  .aboutme__paragraph-item,
+  .portfolio__item-link,
+  .education__list-item_year,
+  .education__list-item_name {
+    font-size: 13px;
+    line-height: 16px;
+  }
+
+  .education__wrapper {
+    grid-template-columns: 1fr;
+    grid-gap: 2rem;
+  }
 }

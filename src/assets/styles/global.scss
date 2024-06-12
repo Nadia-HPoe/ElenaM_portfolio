@@ -1,3 +1,4 @@
+@use "./var";
 @import url("https://fonts.googleapis.com/css2?family=Raleway:ital@0;1&display=swap");
 
 body {
@@ -24,5 +25,32 @@ body {
   &:hover,
   &:active {
     fill: #280e0f;
+  }
+}
+
+@media screen and (max-width: 1099px) and (min-width: 551px) {
+  .main__button-scroll {
+    right: 10px;
+    bottom: 5px;
+  }
+  .main__button-scroll_icon {
+    width: 45px;
+    height: 45px;
+  }
+}
+
+@media screen and (max-width: 550px) and (min-width: 200px) {
+  .main__button-scroll {
+    right: 1px;
+    bottom: 8px;
+  }
+  .main__button-scroll_icon {
+    fill: #e3d0d1;
+    width: 40px;
+    height: 40px;
+    &:hover,
+    &:active {
+      fill: var.$main-color;
+    }
   }
 }
