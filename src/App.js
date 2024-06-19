@@ -19,13 +19,13 @@ function App() {
     <div className='App'>
       <ScrollToTopButton />
       <Header
-        main={mainRef}
         about={aboutRef}
         education={educationRef}
         portfolio={portfolioRef}
+        footer={footerRef}
       />
 
-      <Main ref={mainRef} footer={footerRef} />
+      <Main ref={mainRef} />
       <AboutMe ref={aboutRef} />
       <Education ref={educationRef} />
       <Portfolio ref={portfolioRef} />

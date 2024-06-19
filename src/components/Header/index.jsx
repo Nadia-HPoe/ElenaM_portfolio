@@ -2,7 +2,7 @@ import React from "react";
 import "./header.scss";
 import { Icons } from "../Icons";
 
-const Header = ({ main, about, education, portfolio }) => {
+const Header = ({ about, education, portfolio, footer }) => {
   return (
     <header className='header__container'>
       <nav class='header__menu'>
@@ -48,16 +48,6 @@ const Header = ({ main, about, education, portfolio }) => {
           <li class='header__list-item'>
             <button
               onClick={() =>
-                main.current.scrollIntoView({ behavior: "smooth" })
-              }
-              class='header__link'
-            >
-              Обо мне
-            </button>
-          </li>
-          <li class='header__list-item'>
-            <button
-              onClick={() =>
                 about.current.scrollIntoView({ behavior: "smooth" })
               }
               class='header__link'
@@ -83,6 +73,26 @@ const Header = ({ main, about, education, portfolio }) => {
               class='header__link'
             >
               Портфолио
+            </button>
+          </li>
+          <li class='header__list-item'>
+            <button
+              onClick={() =>
+                footer.current.scrollIntoView({ behavior: "smooth" })
+              }
+              class='header__link'
+            >
+              Как я работаю
+            </button>
+          </li>
+          <li class='header__list-item'>
+            <button
+              onClick={() =>
+                footer.current.scrollIntoView({ behavior: "smooth" })
+              }
+              class='header__link'
+            >
+              Контакты
             </button>
           </li>
         </ul>

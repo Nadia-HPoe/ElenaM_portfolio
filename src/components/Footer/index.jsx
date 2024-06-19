@@ -130,6 +130,16 @@ const Footer = forwardRef(
                 Портфолио
               </button>
             </li>
+            <li class='footer__list-item'>
+              <button
+                onClick={() =>
+                  main.current.scrollIntoView({ behavior: "smooth" })
+                }
+                class='footer__link'
+              >
+                Как я работаю
+              </button>
+            </li>
           </ul>
         </div>
         <div class='footer__copyright'>

@@ -3,7 +3,7 @@ import { forwardRef } from "react";
 import Image from "../../../assets/images/main_image.jpg";
 import "../screens.scss";
 
-const Main = forwardRef(({ footer, props }, ref) => {
+const Main = forwardRef((props, ref) => {
   return (
     <section ref={ref} className='container'>
       <div className='main__wrapper'>
@@ -37,14 +37,14 @@ const Main = forwardRef(({ footer, props }, ref) => {
             </p>
           </div>
 
-          <button
-            onClick={() =>
-              footer.current.scrollIntoView({ behavior: "smooth" })
-            }
+          <a
+            href='https://t.me/lenore_mommy'
+            target='_blank'
+            rel='noreferrer'
             className='main__info-button'
           >
             Связаться со мной
-          </button>
+          </a>
         </div>
         <div className='main__image'>
           <img src={Image} className='main__image-item' alt='myphoto' />
