@@ -4,7 +4,7 @@ import "./footer.scss";
 import { Icons } from "../Icons";
 
 const Footer = forwardRef(
-  ({ main, about, education, portfolio, props }, ref) => {
+  ({ main, about, education, portfolio, work, props }, ref) => {
     return (
       <footer ref={ref} className='footer__container'>
         <div className='footer__contacts'>
@@ -133,7 +133,7 @@ const Footer = forwardRef(
             <li class='footer__list-item'>
               <button
                 onClick={() =>
-                  main.current.scrollIntoView({ behavior: "smooth" })
+                  work.current.scrollIntoView({ behavior: "smooth" })
                 }
                 class='footer__link'
               >

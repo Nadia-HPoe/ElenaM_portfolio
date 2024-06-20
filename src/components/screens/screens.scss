@@ -26,7 +26,8 @@
   line-height: 60px;
 }
 
-.main__info-text {
+.main__info-text,
+.work__list-item_title {
   font-size: 20px;
   line-height: 26px;
 }
@@ -66,7 +67,8 @@
 }
 
 .aboutme__container,
-.education__container {
+.education__container,
+.work__container {
   padding: 0 14rem;
 }
 .portfolio__container {
@@ -75,7 +77,8 @@
 
 .aboutme__title,
 .education__title,
-.portfolio__title {
+.portfolio__title,
+.work__title {
   padding-top: 5rem;
   font-weight: 700;
   font-size: 44px;
@@ -108,14 +111,16 @@
 .aboutme__paragraph-item,
 .portfolio__item-link,
 .education__list-item_year,
-.education__list-item_name {
+.education__list-item_name,
+.work__list-item {
   font-size: 18px;
   line-height: 26px;
   letter-spacing: 0.03em;
 }
 
 .aboutme__paragraph-item,
-.portfolio__item-link {
+.portfolio__item-link,
+.work__list-item_title {
   font-weight: 600;
 }
 
@@ -221,19 +226,75 @@
   align-items: center;
 }
 
+.work__list {
+  list-style-type: none;
+  counter-reset: num;
+  position: relative;
+  margin: 0 0 0 60px;
+  padding: 2rem 0 1rem 0;
+}
+
+.work__list-item {
+  position: relative;
+  margin: 0 0 0 0;
+  padding: 0 0 1rem 0;
+  line-height: 1.5;
+}
+
+.work__list-item::after {
+  content: counter(num);
+  counter-increment: num;
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: -45px;
+  width: 28px;
+  height: 28px;
+  line-height: 28px;
+  background: #fff;
+  color: #000;
+  text-align: center;
+  font-size: 17px;
+  border-radius: 50%;
+  border: 1px solid var.$main-color;
+}
+
+.work__list::before {
+  content: "";
+  position: absolute;
+  top: 2rem;
+  bottom: 15px;
+  left: -30px;
+  width: 1px;
+  border-left: 1px solid var.$main-color;
+}
+
+.work__list-item:last-child::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: -38px;
+  width: 28px;
+  background: #fff;
+}
+
 @media screen and (max-width: 1700px) and (min-width: 1500px) {
   .main__info-title {
     font-size: 36px;
     line-height: 48px;
   }
 
-  .main__info-text {
+  .main__info-text,
+  .work__list-item_title {
     font-size: 18px;
     line-height: 24px;
   }
   .aboutme__title,
   .education__title,
-  .portfolio__title {
+  .portfolio__title,
+  .work__title {
     padding-top: 5rem;
     font-size: 36px;
     line-height: 48px;
@@ -253,7 +314,8 @@
     padding: 3rem 8rem;
   }
   .aboutme__container,
-  .education__container {
+  .education__container,
+  .work__container {
     padding: 0 8rem;
   }
   .portfolio__container {
@@ -269,13 +331,15 @@
     line-height: 40px;
   }
 
-  .main__info-text {
-    font-size: 16px;
+  .main__info-text,
+  .work__list-item_title {
+    font-size: 18px;
     line-height: 22px;
   }
   .aboutme__title,
   .education__title,
-  .portfolio__title {
+  .portfolio__title,
+  .work__title {
     padding-top: 3rem;
     font-size: 32px;
     line-height: 40px;
@@ -290,7 +354,8 @@
   .aboutme__paragraph-item,
   .portfolio__item-link,
   .education__list-item_year,
-  .education__list-item_name {
+  .education__list-item_name,
+  .work__list-item {
     font-size: 16px;
     line-height: 22px;
   }
@@ -319,7 +384,8 @@
     padding: 1rem 4rem;
   }
   .aboutme__container,
-  .education__container {
+  .education__container,
+  .work__container {
     padding: 0 4rem;
   }
   .portfolio__container {
@@ -339,9 +405,10 @@
     line-height: 30px;
   }
 
-  .main__info-text {
-    font-size: 14px;
-    line-height: 17px;
+  .main__info-text,
+  .work__list-item_title {
+    font-size: 16px;
+    line-height: 20px;
   }
   .main__info-button {
     width: 15rem;
@@ -353,7 +420,8 @@
 
   .aboutme__title,
   .education__title,
-  .portfolio__title {
+  .portfolio__title,
+  .work__title {
     padding-top: 3rem;
     font-size: 24px;
     line-height: 30px;
@@ -368,7 +436,8 @@
   .aboutme__paragraph-item,
   .portfolio__item-link,
   .education__list-item_year,
-  .education__list-item_name {
+  .education__list-item_name,
+  .work__list-item {
     font-size: 14px;
     line-height: 17px;
   }
@@ -403,7 +472,8 @@
     padding: 1rem 1rem;
   }
   .aboutme__container,
-  .education__container {
+  .education__container,
+  .work__container {
     padding: 0 1rem;
   }
   .portfolio__container {
@@ -420,8 +490,9 @@
     line-height: 26px;
   }
 
-  .main__info-text {
-    font-size: 14px;
+  .main__info-text,
+  .work__list-item_title {
+    font-size: 16px;
     line-height: 18px;
   }
 
@@ -435,7 +506,8 @@
 
   .aboutme__title,
   .education__title,
-  .portfolio__title {
+  .portfolio__title,
+  .work__title {
     padding-top: 3rem;
     font-size: 18px;
     line-height: 26px;
@@ -451,7 +523,8 @@
   .aboutme__paragraph-item,
   .portfolio__item-link,
   .education__list-item_year,
-  .education__list-item_name {
+  .education__list-item_name,
+  .work__list-item {
     font-size: 14px;
     line-height: 18px;
   }

@@ -2,7 +2,7 @@ import React from "react";
 import "./header.scss";
 import { Icons } from "../Icons";
 
-const Header = ({ about, education, portfolio, footer }) => {
+const Header = ({ about, education, portfolio, work, footer }) => {
   return (
     <header className='header__container'>
       <nav class='header__menu'>
@@ -78,7 +78,7 @@ const Header = ({ about, education, portfolio, footer }) => {
           <li class='header__list-item'>
             <button
               onClick={() =>
-                footer.current.scrollIntoView({ behavior: "smooth" })
+                work.current.scrollIntoView({ behavior: "smooth" })
               }
               class='header__link'
             >
