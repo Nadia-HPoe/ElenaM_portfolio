@@ -17,7 +17,7 @@ const Footer = forwardRef(
             <Icons
               className='footer__contacts-icon'
               name='vk'
-              color='#aa474c'
+              color='#aa4761'
               size='30'
             />
             vkontakte
@@ -31,7 +31,7 @@ const Footer = forwardRef(
             <Icons
               className='footer__contacts-icon'
               name='telegram'
-              color='#aa474c'
+              color='#aa4761'
               size='30'
             />
             telegram
@@ -43,7 +43,7 @@ const Footer = forwardRef(
             <Icons
               className='footer__contacts-icon'
               name='mail'
-              color='#aa474c'
+              color='#aa4761'
               size='30'
             />
             mazurovaes@yandex.ru
@@ -59,7 +59,7 @@ const Footer = forwardRef(
             <Icons
               className='footer__contacts-icon'
               name='vk'
-              color='#aa474c'
+              color='#aa4761'
               size='40'
             />
           </a>
@@ -72,7 +72,7 @@ const Footer = forwardRef(
             <Icons
               className='footer__contacts-icon'
               name='telegram'
-              color='#aa474c'
+              color='#aa4761'
               size='40'
             />
           </a>
@@ -83,7 +83,7 @@ const Footer = forwardRef(
             <Icons
               className='footer__contacts-icon'
               name='mail'
-              color='#aa474c'
+              color='#aa4761'
               size='40'
             />
           </a>
@@ -144,14 +144,14 @@ const Footer = forwardRef(
         </div>
         <div class='footer__copyright'>
           <p class='footer__copyright-paragraph'>
-            Copyright © 2024. Designed and developed by{" "}
+            Copyright © 2025. Designed and developed by{" "}
             <a
               class='footer__copyright-link'
               href='https://github.com/Nadia-HPoe'
               target='_blank'
               rel='noreferrer'
             >
-              Nadia Borisova
+              Nadia Szabo
             </a>
           </p>
           <p class='footer__copyright-paragraph'>

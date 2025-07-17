@@ -19,8 +19,8 @@ const Portfolio = forwardRef((props, ref) => {
       <div className='portfolio__wrapper'>
         <Swiper
           style={{
-            "--swiper-navigation-color": "#aa474c",
-            "--swiper-pagination-color": "#aa474c",
+            "--swiper-navigation-color": "#aa4761",
+            "--swiper-pagination-color": "#aa4761",
           }}
           navigation={true}
           loop={true}
@@ -92,8 +92,8 @@ const Portfolio = forwardRef((props, ref) => {
       <div className='portfolio__wrapper-mobile'>
         <Swiper
           style={{
-            "--swiper-navigation-color": "#aa474c",
-            "--swiper-pagination-color": "#aa474c",
+            "--swiper-navigation-color": "#aa4761",
+            "--swiper-pagination-color": "#aa4761",
           }}
           navigation={true}
           loop={true}

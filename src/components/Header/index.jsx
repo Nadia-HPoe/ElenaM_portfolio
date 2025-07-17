@@ -16,7 +16,7 @@ const Header = ({ about, education, portfolio, work, footer }) => {
             <Icons
               className='header__contacts-icon'
               name='vk'
-              color='#aa474c'
+              color='#aa4761'
               size='40'
             />
           </a>
@@ -39,7 +39,7 @@ const Header = ({ about, education, portfolio, work, footer }) => {
             <Icons
               className='header__contacts-icon'
               name='mail'
-              color='#aa474c'
+              color='#aa4761'
               size='40'
             />
           </a>

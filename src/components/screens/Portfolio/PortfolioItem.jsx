@@ -7,7 +7,7 @@ const PortfolioItem = (props) => {
     <div className='portfolio__item'>
       <div className='portfolio__item-title-container'>
         <div className='portfolio__icon'>
-          <Icons className='icon' name='circle' color='#aa474c' size='20' />
+          <Icons className='icon' name='circle' color='#aa4761' size='20' />
         </div>
 
         <p className='portfolio__item-title'>{props.title}</p>
